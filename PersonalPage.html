@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal Page</title>
+    <link rel="stylesheet" href="MyStyle.css">
+    <script type="text/javascript" src="MyScript.js"></script>
+</head>
+
+<body onload="openMenu('Main')">
+
+<div class="wrap">
+    <button class="header">#MainSitePage</button>
+    <div class="horizontal-menu">
+        <button class="login">Log-in</button>
+    </div>
+</div>
+
+
+<main>
+    <div class="wrap">
+
+        <div>
+            <button class="collapsible" onclick="collapse(0)"><span>Profile</span></button>
+            <div class="content" style="position: relative; left: 20px">
+                <button class="menu" onclick="openMenu('User Info')">User Info</button>
+                <button class="menu" onclick="openMenu('E-mail')">E-mail</button>
+                <button class="menu" onclick="openMenu('Address')">Address</button>
+                <button class="menu" onclick="openMenu('Phone')">Phone</button>
+            </div>
+        </div>
+
+
+        <div>
+            <button class="collapsible" onclick="collapse(1)"><span>Orders</span></button>
+            <div class="content" style="position: relative; left: 20px">
+                <button class="menu" onclick="openMenu('Active')">Active</button>
+                <button class="menu" onclick="openMenu('Waiting')">Waiting</button>
+                <button class="menu" onclick="openMenu('Completed')">Completed</button>
+                <button class="menu" onclick="openMenu('Denied')">Denied</button>
+            </div>
+        </div>
+
+
+        <div>
+            <button class="collapsible" onclick="collapse(2)"><span>Account</span></button>
+            <div class="content" style="position: relative; left: 20px">
+                <button class="menu" onclick="openMenu('User Name')">User Name</button>
+                <button class="menu" onclick="openMenu('Password')">Password</button>
+            </div>
+        </div>
+
+
+        <div class="horizontal-block">
+
+            <div id="Main" class="table-content">
+                <h3>Main</h3>
+            </div>
+
+            <div id="User Info" class="table-content">
+                <h3>User Info</h3>
+            </div>
+
+            <div id="E-mail" class="table-content">
+                <h3>E-mail</h3>
+            </div>
+
+            <div id="Address" class="table-content">
+                <h3>Address</h3>
+            </div>
+
+            <div id="Phone" class="table-content">
+                <h3>Phone</h3>
+            </div>
+
+            <div id="Active" class="table-content">
+                <h3>Active</h3>
+            </div>
+
+            <div id="Waiting" class="table-content">
+                <h3>Waiting</h3>
+            </div>
+
+            <div id="Completed" class="table-content">
+                <h3>Completed</h3>
+            </div>
+
+            <div id="Denied" class="table-content">
+                <h3>Denied</h3>
+            </div>
+
+            <div id="User Name" class="table-content">
+                <h3>User Name</h3>
+            </div>
+
+            <div id="Password" class="table-content">
+                <h3>Password</h3>
+            </div>
+
+        </div>
+
+    </div>
+</main>
+
+</body>
+</html>
